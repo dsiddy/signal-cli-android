@@ -111,6 +111,10 @@ public class Main {
         fileOrDirectory.delete();
     }
 
+    public URI getDeviceLinkUri() throws TimeoutException, IOException {
+      return m.getDeviceLinkUri();
+    }
+
     public int handleCommands(Namespace ns) {
         final String username = ns.getString("username");
         Signal ts;
